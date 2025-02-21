@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Brian Willems Author</title>
+<style>
+body {
+font-family: "Garamond", serif;
+margin: 0;
+padding: 0;
+background-color: white;
+}
+
+/* De Stijl color palette */
+.red { background-color: #F00; }
+.blue { background-color: #00F; }
+.yellow { background-color: #FF0; }
+.black { background-color: #000; }
+.white { background-color: #FFF; }
+
+/* Page structure */
+.container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto 1fr;
+grid-template-areas: 
+"header header header"
+"left content right";
+height: 100vh;
+}
+
+/* Header section */
+header {
+grid-area: header;
+background-color: black;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 2em;
+text-transform: uppercase;
+}
+
+/* Left side section */
+.left {
+grid-area: left;
+background-color: #9A9498;
+padding: 20px;
+color: white;
+text-align: center;
+}
+
+/* Content section */
+.content {
+grid-area: content;
+background-color: #DAD8C9;
+padding: 20px;
+color: black;
+text-align: left;
+}
+
+/* Right side section */
+.right {
+grid-area: right;
+background-color: #A3AABE;
+padding: 20px;
+color: white;
+text-align: center;
+}
+
+/* Footer section */
+footer {
+grid-column: 1 / span 3;
+background-color: #F9CB40;
+color: black;
+text-align: center;
+padding: 10px;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+h1, h2 {
+margin: 0;
+}
+
+p {
+font-size: 1.2em;
+}
+
+.author-name {
+font-weight: bold;
+font-size: 1.5em;
+color: #F00;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- Header -->
+<header>
+<h1>Brian WILLEMS</h1>
+</header>
+
+<!-- Left side -->
+<div class="left">
+<h2>Biography</h2>
+<p>Brian Willems was born in Minnesota in 1972 and lived there until 1996, when he moved to Prague. He now lives and works in Croatia, teaching literature at the University of Split and serving as director of its Studia Mediterranea centre. Brian’s poetry and prose have appeared in The Antioch Review, Poetry Salzburg Review, Things Magazine, Prague Literary Review and elsewhere. He is the author of several academic books, most recently Anger and Change in Korean American Literature (2025), Sham Ruins: A User's Guide (2022), and is co-editor, with Nicol Barria-Asenjo and Slavoj Žižek, of Global Manifestos for the 21st Century, with a foreword by Yanis Varoufakis (2023). He translates from Croatian into English, including work by Jurica Pavičić, and received a grant from the European Prize for Literature for his translation of Luka Bekavac's Gallery of Fine Arts in Osijek: Studies, Ruins. He is co-editor of LOOK Editions, has been a guest lecturer in the UK, USA, the Middle East, and continental Europe.</p>
+<p>A list of his academic publications can be found <a href="https://www.croris.hr/crosbi/searchByContext/2/30750">here</a></p>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+<h2></h2>
+<p>The Surviving Cells is forthcoming Autumn 2025 from <a href="https://www.lesfugitives.com/2025/brian-willems-the-surviving-cells"s>Les Fugitives</a>. Now available for pre-order.</p>
+<p><img src="tsc.png" HEIGHT="auto" WIDTH="300px"></img>
+</div>
+
+<!-- Right side -->
+<div class="right">
+<h2>Contact</h2>
+<p>Email: brianwillems (at) gmail.com</p>
+<p>Instagram: @willems.brian</p>
+</div>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 Brian WILLEMS. All Rights Reserved.</p>
+</footer>
+</div>
+</body>
+</html>
